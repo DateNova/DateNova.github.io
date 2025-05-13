@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centralización y Estructuración de Bases de Datos - DateNova</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-oscuro: #1b2a41;
+      --azul-claro: #00b0ff;
+      --verde: #7fd13b;
+      --gris-fondo: #064867;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--gris-fondo);
+      color: #ffffff;
+    }
+
+    header {
+      background-color: var(--azul-oscuro);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(27, 42, 65, 0.7), rgba(27, 42, 65, 0.7)),
+                  url('https://images.unsplash.com/photo-1581093588401-24538da6a34b') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--verde);
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .content-section {
+      padding: 4rem 2rem;
+      background-color: #fff;
+    }
+
+    .content-section h3 {
+      text-align: center;
+      color: var(--azul-oscuro);
+      margin-bottom: 2rem;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-item {
+      background-color: var(--gris-fondo);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .google-automation-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                  url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover no-repeat;
+      color: #fff;
+      padding: 4rem 2rem;
+    }
+
+    footer {
+      background-color: var(--azul-oscuro);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: auto;
+    }
+
+    .cta-button-secondary {
+      display: inline-block;
+      background-color: var(--azul-claro);
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="DateNova Logo">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Beneficios</a></li>
+        <li><a href="#automatizacion">Integración Google</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Unifique y Potencie sus Datos con Bases de Datos Centralizadas</h2>
+      <p>En DateNova, somos expertos en consolidar toda la información relevante de su empresa. Creamos bases de datos centralizadas y perfectamente estructuradas que mejoran radicalmente la accesibilidad y visibilidad de sus datos, potenciando la toma de decisiones estratégicas y la eficiencia operativa en todas las áreas de su negocio.</p>
+      <a href="#contacto" class="cta-button">Solicitar Asesoría para Centralizar sus Datos</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="content-section">
+    <div class="container">
+      <h3>Beneficios Clave de Centralizar y Estructurar sus Bases de Datos</h3>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h4>Visión Unificada de la Información Empresarial</h4>
+          <p>Consolidamos datos de diversas fuentes, incluyendo sistemas operacionales, recursos humanos y clientes...</p>
+        </div>
+        <div class="feature-item">
+          <h4>Mejora en la Calidad y Consistencia de los Datos</h4>
+          <p>Implementamos procesos de estandarización y validación que aseguran calidad, precisión y consistencia.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Acceso Rápido y Seguro a la Información</h4>
+          <p>Diseñamos bases de datos estructuradas con acceso seguro para usuarios autorizados.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Base Sólida para Business Intelligence</h4>
+          <p>La estructura adecuada permite el uso de herramientas BI, visualización y analítica avanzada.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Facilita el Cumplimiento Normativo</h4>
+          <p>Simplificamos la gestión normativa y la generación de reportes exigidos por regulación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="automatizacion" class="google-automation-section">
+    <div class="container">
+      <h3>Integración con el Ecosistema Google para una Gestión de Datos Superior</h3>
+      <p>Maximizamos sus datos con Google Workspace: Google Sheets, Apps Script, AppSheet y automatizaciones personalizadas...</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="content-section">
+    <div class="container">
+      <h3>¿Preparado para Desbloquear el Poder de sus Datos?</h3>
+      <p>Contacte a DateNova hoy mismo para una asesoría especializada y descubra cómo podemos ayudarle.</p>
+      <a href="mailto:datenovadoc@gmail.com?subject=Solicitud%20de%20Asesoría%20en%20Centralización%20de%20Datos" class="cta-button">Solicitar Asesoría por Email</a>
+      <a href="tel:+573105586071" class="cta-button-secondary">Llamar Ahora</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DateNova - Soluciones Inteligentes de Datos. Todos los derechos reservados.</p>
+      <p>Email: datenovadoc@gmail.com – Teléfono: 3105586071</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573105586071" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
